@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+* > video{
+    max-width: min(100%, 250px);
+}
+
+#football {
+    display: none;
+    position: fixed;
+    bottom: 80%;
+    right: 50%;
+    width: 70px;
+    height: 70px;
+    z-index: 12;
+    cursor: pointer;
+}
+
+#goal{
+    position: fixed;
+    top:1%;
+    left: 80%;
+    width: 20%;
+    height: 15%;
+    z-index: 11;
+}
+
+
+html {
+    scroll-behavior: smooth;
+    /* scroll-padding-top: max(3.5rem, 6vh); */
+    scroll-padding-top: 7em;
+}
+
+/* offset scroll target to compensate for the page header */
+:target:before {
+    content: "";
+    display: block;
+}
+
+.emailPos{
+    display: flex;
+    align-items: center;
+}
+
+header{
+    background: darkslategray;
+}
+
+nav{
+    background: darkslategrey;
+}
+
+.logo{
+    background: darkslategrey;
+}
+
+body {
+    font: clamp(12px, 1vmax, 16px) Trebuchet MS, Arial, sans-serif;
+    line-height: 1.7;
+    background: antiquewhite;
+    letter-spacing: 0.03em;
+    overflow: visible;
+}
+
+/* Used in conjunction with js to stop all transitions when the window is being resized. This prevents an artifact where
+   the navbar appears open and then transitions to the closed state (when the media query boundary is crossed). */
+body.stop-transitions * {
+    transition: none !important;
+}
+
+.clear {
+    clear: both;
+    height: clamp(2em, 5vmax, 3em);
+}
+
+#page-wrap {
+    max-width: 1100px;
+    margin: 0px auto;
+    padding: 3em;
+}
+
+a {
+    color: #757575;
+    text-decoration: none;
+    border-bottom: 1px dotted #757575;
+}
+
+
+
+a:hover {
+    border-bottom-style: solid;
+    color: black;
+}
+
+.content{
+   display: none;
+
+}
+
+.active-content{
+    display: block;
+}
+
+#hobbiesVidAdj{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+
+}
+
+.hobbiesText{
+    width: 50%;
+    padding-right: 10%;
+}
+
+.hobbiesVid{
+
+    width: 50%;
+}
+
+
+
+h2 {
+    font-weight: bold;
+    font-size: 1.3em;
+    padding-bottom: 0.7em;
+}
+
+
+
+.content > img{
+    max-width: min(100%, 250px);
+}
+
+.content > video{
+    max-width: min(100%, 250px);
+}
+.active-content > img{
+    max-width: min(100%, 250px);
+}
+
+.active-content > video{
+    max-width: min(100%, 250px);
+}
+
+
+
+.hobbies > video{
+    max-width: min(100%, 250px);
+}
+
+.trip > img{
+    max-width: min(100%, 250px);
+}
+
+
+/* used to set a fixed width font */
+.fixed {
+    font-family: "Courier", monospace;
+}
+
+
+
+
+/* Switch to a single column (paper description below image) if the screen is small.*/
+
+@media only screen and (max-width: 550px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-gap: 1em;
+    }
+
+    .grid-container > .publication_text {
+        margin-bottom: 2em;
+    }
+    .football{
+        display: none;
+
+    }
+    .goal{
+        display: none;
+    }
+
+}
+
+
+
+
+td {
+    padding-right: 2em;
+}
+
+
+
+span.paper {
+    color: #c75300;
+}
+
+em {
+    color: #aa1d1d;
+}
+
+#email {
+    float: right;
+}
+
+/* footer with social icons */
+
+footer {
+    background-color: darkslategrey;
+    text-align: center;
+    width: 100%;
+}
+
+.content h2{
+    margin-top: 5em;
+
+}
+
+
+
+footer i {
+    margin: 20px 5px;
+    transform: scale(1.0);
+    transition-duration: 0.2s;
+}
+
+footer i:hover {
+    margin: 20px 5px;
+    transform: scale(1.2);
+    transition-duration: 0.2s;
+}
+
+footer a {
+    color: #757575;
+    text-decoration: none;
+    border-bottom: none;
+}
+
+footer a:hover {
+    color: #757575;
+    border-bottom: none;
+}
+
+/* Set different hover colors per icon */
+
+footer i[class*="fa-youtube"]:hover {
+    color: #e30707;
+}
+footer i[class*="fa-x-twitter"]:hover {
+    color: #010c9f;
+}
+
+footer i[class*="fa-envelope"]:hover {
+    color: rgba(66, 66, 66, 0.11);
+}
+
+

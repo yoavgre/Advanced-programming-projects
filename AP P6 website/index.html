@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+
+    <title>yoav @ Runi</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="images/football.jpeg">
+    <meta charset="UTF-8">
+    <meta name="description" content="CS student, Reichman University">
+    <meta name="keywords" content="yoav,greidinger,yoav greidinger,IDC Herzliya,Reichman University,computer science">
+    <meta name="author" content="yoav greidinger">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="all">
+    <!-- The following pattern defers CSS loading, making page load much faster -->
+    <link rel="preload" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    </noscript>
+    <link rel="stylesheet" type="text/css" href="cv.css">
+    <link rel="stylesheet" type="text/css" href="nav.css">
+    <!-- Use FontAwesome for (most) icons -->
+    <script src="https://kit.fontawesome.com/2a7f8c9d6d.js" defer crossorigin="anonymous"></script>
+    <!-- Use AcademicIcons for Google Scholar and Semantic Scholar icons -->
+    <!-- The following pattern defers CSS loading, making page load much faster -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    </noscript>
+    <script src="logics.js" defer></script>
+</head>
+
+<body>
+<img src="images/football3.png" id="football" alt="football" sizes="10px" title="move_me">
+<img src="images/net.png" id="goal" alt="goal">
+<header>
+    <div class="logo">
+        <img id="me" loading=lazy alt="A photo of Yoav greidinger" src="images/profpic.jpeg" sizes="100px">
+        <a href="#">Yoav greidinger</a>
+    </div>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation bar">
+    <nav>
+        <ul>
+            <li>
+                <a class="navButton" onclick="changeTab('home')">
+                    <i class="fa-solid fa-house" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li>
+                <a class="navButton" onclick="changeTab('about')">About</a>
+            </li>
+            <!--<li><a href="#publications">Publications</a></li>-->
+            <li>
+                <a class="navButton" onclick="changeTab('education')">education</a>
+            </li>
+            <li>
+                <a class="navButton" onclick="changeTab('trips')">trips</a>
+            </li>
+            <li>
+                <a class="navButton" onclick="changeTab('sportEvents')">my sport events</a>
+            </li>
+            <li>
+                <a class="navButton" onclick="changeTab('hobbies')">Hobbies</a>
+            </li>
+            <li>
+                <a class="navButton" onclick="changeTab('employment')">employment</a>
+            </li>
+            <li>
+                <a class="navButton" onclick="changeTab('YourGame')">addYourGame</a>
+            </li>
+
+            <li>
+                <a href="mailto:yoav.greidinger@runi.ac.il" aria-label="email">
+                    <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <label for="nav-toggle" class="nav-toggle-label">
+                <span>
+                    <i class="fa fa-bars fa-lg"></i>
+                </span>
+    </label>
+</header>
+<div id="page-wrap">
+    <div class="clear"></div>
+    <div class="clear"></div>
+    <div class="active-content" id="home">
+        <h3>Welcome to my website</h3>
+        <h2>hope you will enjoy</h2>
+    </div>
+
+    <div class="content" id="about">
+        <h2>About Me</h2>
+        <p>hi i'm yoav. im CS and entrepreneurship student at <a href="https://www.runi.ac.il/en">Raichman university</a> i live in tel aviv, and love sports.
+            in my website you can learn a little bit about me, my studies, social media, and get a glimpse of my hobbies.</p>
+    </div>
+
+    <div class ="content" id="education">
+        <h2>education</h2>
+        <img src="images/Hebrew_Reali_Logo.png" class="photo" alt="my school">
+        <p>i studied in the hebrew reali school in haifa and graduated in 2014</p>
+        <img src="images/zofim.png" class="photo" alt="zofim">
+        <p>i was invovled in the "zofim" and also did "shnat sherot" there after school</p>
+    </div>
+
+
+    <div class="content" id="trips">
+        <h2>my recent trips</h2>
+        <div class="trip">
+         <img src="images/viatnam.jpeg" class="photo" alt="vitnam_img">
+            <p>2023 - one month trip in vitnam, amazing views and culture</p>
+        </div>
+        <div class="trip">
+            <img src="images/newyork.jpeg" class="photo" alt="new_yotk_view">
+            <p>2023 - one week in new york with my sister, enjoying good restaurants and food</p>
+        </div>
+        <div class="trip">
+            <img src="images/paris.jpeg" class="photo" alt="yoav_in_paris">
+            <p>few days in paris with my friends from home</p>
+        </div>
+        <div class="trip">
+            <img src="images/milano.jpeg" class="photo" alt="aperol">
+            <p>one week in milano and torino, had a lot of pasta and campari</p>
+        </div>
+        <div class="trip">
+            <img src="images/london.jpeg" class="photo" alt="london_bar">
+            <p>few days in london with my father, enjoying beer and premier league football</p>
+        </div>
+        <div class="trip">
+            <img src="images/lisbon.jpeg" class="photo" alt="lisbon">
+            <p>few days in lisbon with my mom and sister, very nice city and country</p>
+        </div>
+    </div>
+
+    <div class="content" id="YourGame">
+        <form method="post" onsubmit="thankYou()">
+            <h2>tell me about one of your sport experiences:</h2>
+            <label for="firstName">first name</label>
+            <input type="text" id="firstName" name="firstName">
+            <label for="lastName">last name</label>
+            <input type="text" id="lastName" name="lastName"><br>
+            <label for="eventDate">when was your event</label>
+            <input type="date" id="eventDate" name="eventDate"><br>
+            <label for="sportType">what kind of sport</label>
+            <select id="sportType" name="sportType">
+                <option value="football">football</option>
+                <option value="basketball">basketball</option>
+                <option value="tennis">tennis</option>
+                <option value="american_football">american football</option>
+                <option value="other">other</option>
+            </select><br>
+            <label for="addImage">upload an image from the game</label>
+            <input type="file" id="addImage" name="image" accept="image/*"><br>
+            <label for="details"></label>
+            <textarea id="details" name="details" placeholder="write here all details about your game" rows="5" cols="30"></textarea><br>
+            <label for="Agree">agree to upload your event to the website</label>
+            <input type="checkbox" id="Agree" name="Agree"><br>
+            <div class = emailPos>
+            <label for="email">enter your email</label>
+            <input type="email" id="email" name="email">
+            </div>
+            <br>
+            <input type="submit" value="submit">
+        </form>
+    </div>
+
+
+
+    <div class="content" id="sportEvents">
+        <h2>sport events around the world</h2>
+        <h3>us open in NY</h3>
+        <img src="images/sports/usopen.jpeg">
+        <p>full day of tennis matches in the US open tournament</p>
+        <h3>world cup -qatar</h3>
+        <img src="images/sports/qatar.jpeg">
+        <p>a chance for israelis to visit this country and enjoy the biggest sport event in the world</p>
+        <h3>champions league qf, real madrid-psg</h3>
+        <img src="images/sports/realParismadrid.jpeg">
+        <p>on my way back from argentina been to amazing game in madrid</p>
+        <h3>maccbi haifa-paris, champions league 2022</h3>
+        <img src="images/sports/psgSami.jpeg">
+        <p>psg playing in haifa with messi, naymar, mbapee against maccabi haifa in champions league group stage</p>
+        <h3>champions league away- benfica lisbon</h3>
+        <img src="images/sports/benfica.jpeg">
+        <p>the first away game of maccabi haifa in the champions league in lisbon</p>
+        <h3>history is made in belgrad</h3>
+        <img src="images/sports/belgrad.jpeg">
+        <p>probably one of the most special days in my life, been to Belgrad and saw my hometown team qualifies to the champions league</p>
+        <h3>champions league qf, real madrid-psg</h3>
+        <img src="images/sports/realParismadrid.jpeg">
+        <p>on my way back from argentina been to amazing game in madrid</p>
+        <h3>champions league qf, real madrid-psg</h3>
+        <img src="images/sports/realParismadrid.jpeg">
+        <p>on my way back from argentina been to amazing game in madrid</p>
+        <h3>Premier league: tottenham vs chelsea</h3>
+        <img src="images/sports/totnham.jpeg">
+        <p>amazing atmosphere in london</p>
+        <h3>NFL new york giants game</h3>
+        <video src="images/sports/nfl.MP4" controls></video>
+        <p>only time in an NFL game, amazing experience and very interesting sport</p>
+        <h3>my first NBA game</h3>
+        <img src="images/sports/nba.jpeg">
+        <p>NBA game Brooklyn with KD against Phoenix </p>
+        <h3>champions league classic - liverpool vs barcelona</h3>
+        <img src="images/sports/liverpool.jpeg">
+        <p>after 3-0 in the first leg for barcelona, felt like a waste of time to go all the way to liverpool for this game,
+            so lucky to be in this historical game
+        </p>
+    </div>
+
+    <div class="content" id="hobbies">
+        <h2>hobbies</h2>
+        <div id = "hobbiesVidAdj">
+            <div class="hobbiesText">
+                <ul id = hobbiesList>
+                  <li>sports and football - this is my real passion in life. especially israeli football, but in general all king of sports </li>
+                  <li>Climbing - climbing few times a week is my workout, it's a perfect sport that makes me stronger and healthier</li>
+                 <li>
+                      playing football - i play once a week, love it.
+                 </li>
+                    <li>movies, tv, youtube - i love finishing my day watching tv series, YouTube or a good movie</li>
+                </ul>
+            </div>
+            <div class="hobbiesVid">
+                <video src="images/keren.mp4" controls></video>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="content" id="employment">
+        <h2>employment</h2>
+        <p>I served for 6 years in the army, and just finished  2 years ago</p><br>
+        <p>to be continue...</p>
+
+    </div>
+</div>
+<footer>
+    <a href="https://www.youtube.com/watch?v=7rQtYe_sTkQ" target="_blank" rel="noopener" aria-label="youtube">
+        <i class="fa-brands fa-youtube fa-2x" aria-hidden="true"></i>
+    </a>
+    <a href="https://twitter.com/yoavgre" target="_blank" rel="noopener" aria-label="twitter">
+        <i class="fa-brands fa-x-twitter fa-2x" aria-hidden="true"></i>
+    </a>
+    <a href="mailto:yoav.greidinger@runi.ac.il" aria-label="email">
+        <i class="fa-regular fa-envelope fa-2x" aria-hidden="true"></i>
+    </a>
+</footer>
+</body>
+</html>
